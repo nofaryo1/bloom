@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom || הזרים שלנו</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">
+        <img src="blooming.png" alt="Bloom by Nofar logo">
+      </h1>
+      <ul class="nav-links">
+        <a href="index.html">דף הבית</a>
+        <a href="flowers.html">הזרים שלנו</a>
+        <a href="contact.html">צור קשר</a>
+        <a href="cart.html" class="cart-link">
+          <span class="material-icons">shopping_cart</span>
+          <span class="cart-badge" id="cartBadge"></span>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flowers-page">
+    <h2>קולקציית הזרים שלנו 💐</h2>
+    <p>גלו את הקולקציה המרהיבה שלנו של זרי פרחים בעבודת יד, כל אחד מהם מעוצב בקפידה כדי להביא שמחה ויופי לכל אירוע.</p>
+    <div class="flowers-page-divider">
+      <span></span>
+      <i>✿</i>
+      <span></span>
+    </div>
+
+    <div class="flowers-grid">
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="rosewhite.jpg" alt="זר ורדים לבן">
+        </div>
+        <h3>זר ורדים לבן</h3>
+        <p>500 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר ורדים לבן"
+          data-price="500"
+          data-image="rosewhite.jpg">הוספה לסל</button>
+      </div>
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="onerose.jpg" alt="זר ורדים אדומים">
+        </div>
+        <h3>זר ורדים אדומים - קטן</h3>
+        <p>250 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר ורדים אדומים - קטן"
+          data-price="250"
+          data-image="onerose.jpg">הוספה לסל</button>
+      </div>
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="bohoflowers.jpg" alt="זר בוהו">
+        </div>
+        <h3>זר בוהו</h3>
+        <p>450 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר בוהו"
+          data-price="450"
+          data-image="bohoflowers.jpg">הוספה לסל</button>
+      </div>
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="weddingflowers.jpg" alt="זר כלה">
+        </div>
+        <h3>זר כלה</h3>
+        <p>750 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר כלה"
+          data-price="750"
+          data-image="weddingflowers.jpg">הוספה לסל</button>
+      </div>
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="flowerswhite.jpg" alt="זר קאי">
+        </div>
+        <h3>זר קאי</h3>
+        <p>400 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר קאי"
+          data-price="400"
+          data-image="flowerswhite.jpg">הוספה לסל</button>
+      </div>
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="pinkflowers.jpg" alt="זר לונה">
+        </div>
+        <h3>זר לונה</h3>
+        <p>350 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר לונה"
+          data-price="350"
+          data-image="pinkflowers.jpg">הוספה לסל</button>
+      </div>
+
+      <div class="flower">
+        <div class="flower-img-wrap">
+          <img src="purpleflowers.jpg" alt="זר ויולט">
+        </div>
+        <h3>זר ויולט</h3>
+        <p>250 ₪</p>
+        <button class="add-to-cart"
+          data-product="זר ויולט"
+          data-price="250"
+          data-image="purpleflowers.jpg">הוספה לסל</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer-signup">
+    <h3>בואו נשאר בקשר 💌</h3>
+    <p>הצטרפי לניוזלטר שלנו וקבלי עדכונים על קולקציות חדשות ומבצעים מיוחדים!</p>
+    <form id="newsletterForm">
+      <input type="email" id="emailInput" placeholder="כתובת אימייל" required>
+      <button type="submit">הרשמה</button>
+    </form>
+    <p id="successMessage">המייל שלך נרשם בהצלחה! איזה כיף שהצטרפת למשפחת Bloom! 🌸</p>
+    <p class="copyright">© 2026 Bloom || Flowers Studio</p>
+  </footer>
+
+  <div id="cart-message"></div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom || צור קשר</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">
+        <img src="blooming.png" alt="Bloom by Nofar logo">
+      </h1>
+      <ul class="nav-links">
+        <a href="index.html">דף הבית</a>
+        <a href="flowers.html">הזרים שלנו</a>
+        <a href="contact.html">צור קשר</a>
+        <a href="cart.html" class="cart-link">
+          <span class="material-icons">shopping_cart</span>
+          <span class="cart-badge" id="cartBadge"></span>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>צרו קשר איתנו 🌷</h2>
+      <p>אנחנו כאן בשבילך! נשמח לעזור לך לבחור את הזר המושלם לכל אירוע.</p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>פרטי התקשרות</h3>
+          <p><strong>📍 כתובת:</strong> דיזנגוף 123, תל אביב</p>
+          <p><strong>📞 טלפון:</strong> 03-1234567</p>
+          <p><strong>✉️ אימייל:</strong> hello@bloombynofar.co.il</p>
+          <p><strong>🕓 שעות פתיחה:</strong> א'-ה' 9:00–19:00 | ו' 9:00–14:00</p>
+        </div>
+
+        <div class="contact-form">
+          <h3>שלחו לנו הודעה 🌼</h3>
+          <form action="thankyou.html" method="get">
+            <input type="text" placeholder="שם מלא" required>
+            <input type="email" placeholder="אימייל" required>
+            <textarea placeholder="ההודעה שלך" rows="5" required></textarea>
+            <button type="submit">שליחה</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-signup">
+    <h3>בואו נשאר בקשר 💌</h3>
+    <p>הצטרפי לניוזלטר שלנו וקבלי עדכונים על קולקציות חדשות ומבצעים מיוחדים!</p>
+    <form id="newsletterForm">
+      <input type="email" id="emailInput" placeholder="כתובת אימייל" required>
+      <button type="submit">הרשמה</button>
+    </form>
+    <p id="successMessage">המייל שלך נרשם בהצלחה! איזה כיף שהצטרפת למשפחת Bloom! 🌸</p>
+    <p class="copyright">© 2026 Bloom || Flowers Studio</p>
+  </footer>
+
+</body>
+</html>
